@@ -93,7 +93,6 @@ def flights_before_12():
     ds = flights.loc[flights.DEPARTURE_TIME < 1200, :]
     ds1 = ds[['AIRLINE', 'YEAR']].groupby('AIRLINE').count()
 
-
 # For each airline, the percentage delay for each dep_airport, over total delay across all dep_airport
 
 # The mean geohash of "longitude" and "latitude" for each airline
